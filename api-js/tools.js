@@ -6,7 +6,7 @@ export const handleChangeRequestHeader = (config) => {
 };
 
 export const handleConfigureAuth = (config) => {
-  config.header["token"] = localStorage.getItem("token") || "";
+  config.headers["token"] = localStorage.getItem("token") || "";
   return config;
 };
 
