@@ -24,7 +24,7 @@ axios.interceptors.response.use(
   },
   (err) => {
     handleNetworkError(err.response.status);
-    Promise.reject(err.response);
+    return Promise.reject(err.response);
   }
 );
 
